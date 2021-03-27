@@ -1,4 +1,23 @@
 {
-  "name": "md-links",
-  "version": "0.1.0"
+  "name": "CDMX010-md-links",
+  "version": "1.0.0",
+  "description": "## Índice",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinnetteVazquez/CDMX010-md-links.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinnetteVazquez/CDMX010-md-links/issues"
+  },
+  "homepage": "https://github.com/LinnetteVazquez/CDMX010-md-links#readme"
 }
