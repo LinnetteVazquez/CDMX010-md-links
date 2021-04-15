@@ -1,23 +1,45 @@
 {
-  "name": "CDMX010-md-links",
-  "version": "1.0.0",
-  "description": "## Índice",
+  "name": "md-links",
+  "version": "0.1.0",
+  "description": "package that seeks to obtain links from a directory or file for extension md",
   "main": "index.js",
+  "bin": {
+  
+    "md-links": "bin/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch --coverage",
+    "eslint": "eslint --ext .js ./ test/",
+    "pretest": "npm run eslint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LinnetteVazquez/CDMX010-md-links.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "md-links"
+  ],
+  "author": "Linnette Elizabeth Vazquez Velazco",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LinnetteVazquez/CDMX010-md-links/issues"
   },
-  "homepage": "https://github.com/LinnetteVazquez/CDMX010-md-links#readme"
+  "homepage": "https://github.com/LinnetteVazquez/CDMX010-md-links#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3"
+  }
 }
